@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const yesButton = document.querySelector(".choice-box button:first-child");
     const noButton = document.querySelector(".choice-box button:last-child");
 
-    let partnerName = "JILLIAN"; // Replace with dynamic value
+    let partnerName = "Daphnne"; // Replace with dynamic value
     let noClickCount = 0; // Counter for No button clicks
 
     // Function to create typewriter effect
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (i < text.length) {
                 element.innerHTML += text.charAt(i);
                 i++;
-                setTimeout(typing, speed);
+                setTimeout(typing, speed); 
             } else {
                 element.innerHTML += `<span class="typewriter"></span>`; // Cursor effect
             }
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     yesButton.addEventListener("click", function () {
-        questionText.innerHTML = `<span class="partner-name">${partnerName}</span><br><span class="love-text">I love you baby ❤️</span>`;
+        questionText.innerHTML = `<span class="partner-name">${partnerName}</span><br><span class="love-text">I love you babu ❤️</span>`;
         choiceBox.style.display = "none"; // Hide choices
         threedBox.classList.remove("hide");
 
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             yesButton.style.padding = `${newYesSize / 2}px ${newYesSize}px`;
         } else {
             noButton.style.display = "none"; // Hide No button after 5 clicks
-            questionText.innerHTML += `<br><span class="no-choice-text">Did you really think you had a choice? 🤭</span>`;
+            questionText.innerHTML += `<br><span class="no-choice-text">Wala ka pong choice babu hehe 🤭</span>`;
         }
     });
 
